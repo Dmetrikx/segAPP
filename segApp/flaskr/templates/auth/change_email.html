@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Email Change{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+You can change your email here
+<form method='POST'>
+    <label for="current_email">Current Email</label>
+    <input type='text' name="current_email" id="current_email" >
+    <label for="new_email">New Email</label>
+    <input type='text' name="new_email" id="new_email" >
+
+    <input type="submit" value="Change Password">
+</form>
+{% endblock %}

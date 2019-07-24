@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}My Account{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<ul> 
+    <li><span>Member since : {{ g.user['created_on'] }}</span>
+    <li><span>Email : {{ g.user['email'] }}</span>
+    <li><a href="{{ url_for('auth.change_password') }}">Change Password</a></li>
+    <li><a href="{{ url_for('auth.change_email') }}">Change Email</a></li>
+    <li><span>Change Payment Method</span></li>
+    
+</ul>
+{% endblock %}

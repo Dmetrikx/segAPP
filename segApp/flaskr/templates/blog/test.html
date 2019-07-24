@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+ 
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class='container'>
+    <h3>Welcome! Which is the best programming language of them all?</h3>
+        <form action="/nextImg" method="post">
+            <button name="forwardBtn" type="submit">cat</button>
+        </form>
+        <form action="/prevImg" method="post">
+            <button name="forwardBtn" type="submit">dog</button>
+        </form>
+    <p id=result></p>
+    </div>
+    {% include 'blog/img.html' %}
+
+{% endblock %}

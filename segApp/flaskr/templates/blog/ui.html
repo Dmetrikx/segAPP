@@ -1,0 +1,11 @@
+
+
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<div class = 'row' style = 'height:600px; width: 100%;'>
+   
+    {% include 'blog/left_pane.html' %}
+    {% include 'blog/middle_pane.html' %}
+    {% include 'blog/right_pane.html' %}
+</div>
+{% endblock %}
